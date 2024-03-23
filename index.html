@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal portfolio</title>
+    <link rel="icon" href="/images/favicon-icon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/new-logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Developer</p>
+          <h1>Hi, I'm <span>Ashish</span><br />From Varanasi, India</h1>
+        </div>
+      </div>
+    </div>
+    <!-- End Header -->
+    <!-- Start About -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/my-pic.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              I've 2 years of experience in developing front-end web
+              application, seeking full-time frontend engineering role.
+            </p>
+            <div class="sub-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('certification')">
+                Certification
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Primary</span><br />JavaScript, React, CSS, HTML, Web
+                  APIs, User Interface, Wordpress, Mysql.
+                </li>
+                <li>
+                  <span>Exposure</span><br />User Experience, Ant Design,
+                  Bootstrap, Consuming APIs, Git, Slack, Postman, Jira
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Plutonic Services</span><br />
+                  I worked here on user interface development using React JS,
+                  JavaScript & CSS. It’s a service based company. Here, I worked
+                  on these projects.
+                </li>
+                <li>
+                  <span>ERP System</span><br />
+                  This project has several modules including HR, Employee
+                  Management, Account & Leave Management.
+                </li>
+                <li>
+                  <span>Crunch Munch & Freyr Foods </span><br />Both are
+                  e-commerce sites developed in ReactJS and Ant Design. Both
+                  have more than 5 modules including authentication
+                </li>
+                <li>
+                  <span>NIX HRMS</span><br />We have created this project from
+                  scratch in React Js and Ant Design components. It consumes
+                  backend APIs to show dynamic data. This web application helps
+                  companies to create and run in-house ERP systems.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Bachelor Of Science, Mathematics</span><br />
+                  Veer Bahadur Singh Purvanchal University, Jaunpur, UP, India
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="certification">
+              <ul>
+                <li>
+                  <span>Programming with JavaScript, Coursera </span><br />
+                  <a
+                    href="https://coursera.org/verify/CHZNEQCXS4UP"
+                    target="_blank"
+                    >https://coursera.org/verify/CHZNEQCXS4UP</a
+                  >
+                </li>
+                <li>
+                  <span>Introduction to Front-end development, Coursera</span
+                  ><br />
+                  <a
+                    href=" https://coursera.org/verify/CHZNEQCXS4UP"
+                    target="_blank"
+                    >https://coursera.org/verify/CHZNEQCXS4UP</a
+                  >
+                </li>
+                <li>
+                  <span>HTML and CSS in depth, Coursera</span><br />
+                  <a
+                    href="https://coursera.org/verify/CHZNEQCXS4UP"
+                    target="_blank"
+                    >https://coursera.org/verify/CHZNEQCXS4UP</a
+                  >
+                </li>
+                <li>
+                  <span>Version Control, Coursera </span><br />
+                  <a
+                    href="https://coursera.org/verify/CHZNEQCXS4UP"
+                    target="_blank"
+                    >https://coursera.org/verify/CHZNEQCXS4UP</a
+                  >
+                </li>
+                <li>
+                  <span> Responsive Web Design, Free Code Camp</span><br />
+                  <a
+                    href="https://freecodecamp.org/certification/iashish/respo"
+                    target="_blank"
+                    >https://freecodecamp.org/certification/iashish/respo</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About -->
+    <!-- Start Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Birbals</h3>
+              <p>
+                Mainly i've worked on it with full responsive using html css
+                bootstrap.
+              </p>
+              <a href="https://birbals.com/" target="_blank"
+                ><span class="material-symbols-outlined">
+                  display_external_input
+                </span></a
+              >
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>In will we trust</h3>
+              <p>
+                Mainly i've worked on it with full responsive using html css
+                bootstrap.
+              </p>
+              <a href="http://inwillwetrust.com/" target="_blank"
+                ><span class="material-symbols-outlined">
+                  display_external_input
+                </span></a
+              >
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Dset public school</h3>
+              <p>
+                Mainly i've worked on it with full responsive using html css
+                bootstrap.
+              </p>
+              <a href="http://dsetschool.org/" target="_blank"
+                ><span class="material-symbols-outlined">
+                  display_external_input
+                </span></a
+              >
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- End Portfolio -->
+    <!-- Start Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <a href="mailto: ashishgupta8738@gmail.com"
+                ><i class="fas fa-envelope"></i> ashishgupta8738@gmail.com</a
+              >
+            </p>
+            <p>
+              <a href="tel: +918887515989"
+                ><i class="fas fa-phone"></i>+91 8887515989
+              </a>
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i> </a>
+              <a href="https://github.com/iashish15" target="_blank"
+                ><i class="fab fa-github"></i>
+              </a>
+              <a><i class="fab fa-instagram"></i> </a>
+              <a href="https://www.linkedin.com/in/iashish15/" target="_blank"
+                ><i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-form-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @ Ashish</p>
+      </div>
+    </div>
+    <!-- End Contact -->
+
+    <script>
+      // Functionality for tab links - skills, experience, education
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      // Functionality for humberger menu in small screens
+      var sidemeu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+
+      // Functionality form submitting contact form
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxmsR6jd5DkdS5AkhG1xMvr1jfc-02gp4AawXxy5FgKguFVdOCCpgym6byIY4mQGYnL7Q/exec";
+      const form = document.forms["submit-form-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
