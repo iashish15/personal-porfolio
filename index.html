@@ -73,7 +73,8 @@
                 </li>
                 <li>
                   <span>Exposure</span><br />User Experience, Ant Design,
-                  Bootstrap, Consuming APIs, Git, Slack, Postman, Jira
+                  Bootstrap, Consuming APIs, Git, Slack, Postman, Jira,
+                  Zeppline, Figma.
                 </li>
               </ul>
             </div>
@@ -258,7 +259,14 @@
                 rows="6"
                 placeholder="Your Message"
               ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
+              <img
+                id="spinners"
+                src="https://i.gifer.com/ZZ5H.gif"
+                alt="Loading.."
+              />
+              <button type="submit" id="submitBtn" class="btn btn2">
+                Submit
+              </button>
             </form>
             <span id="msg"></span>
           </div>
@@ -300,10 +308,22 @@
         "https://script.google.com/macros/s/AKfycbxmsR6jd5DkdS5AkhG1xMvr1jfc-02gp4AawXxy5FgKguFVdOCCpgym6byIY4mQGYnL7Q/exec";
       const form = document.forms["submit-form-to-google-sheet"];
       const msg = document.getElementById("msg");
+      const loader = document.getElementById("spinners");
+      const submitBtn = document.getElementById("submitBtn");
       form.addEventListener("submit", (e) => {
         e.preventDefault();
+
+        // if (!submitBtn.classList.contains("submitting")) {
+        //   submitBtn.classList.add("submitting");
+        //   submitBtn.innerText = "Submitting...";
+        // }
+
+        loader.style.display = "block";
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
+            loader.style.display = "none";
+            // submitBtn.classList.remove("submitting");
+            // submitBtn.innerText = "Submit";
             msg.innerHTML = "Message sent successfully!";
             setTimeout(function () {
               msg.innerHTML = "";

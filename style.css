@@ -8,6 +8,9 @@ body {
   background-color: #080808;
   color: #fff;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -304,6 +307,12 @@ form .btn2 {
   color: #61b752;
   margin-top: -20px;
   display: block;
+}
+
+#spinners {
+  display: none;
+  height: 29px;
+  width: 29px;
 }
 /* End Contact */
 
