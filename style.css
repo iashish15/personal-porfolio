@@ -40,6 +40,12 @@ nav {
 .logo {
   width: 140px /*Adjust the width as needed*/;
 }
+.portfolio-text {
+  color: #ff004f;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 nav ul li {
   display: inline-block;
   list-style: none;
@@ -180,8 +186,8 @@ nav .fas {
   color: #ababab;
 }
 /* End About  */
-/* Start Portfolio */
-#portfolio {
+/* Start Work */
+#work {
   padding: 50px 0;
 }
 .work-list {
@@ -256,7 +262,7 @@ nav .fas {
   background-color: #ff004f;
 }
 
-/* End Portfolio */
+/* End Work */
 /* Start Contact */
 .contact-left {
   flex-basis: 35%;
