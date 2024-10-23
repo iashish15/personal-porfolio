@@ -23,7 +23,7 @@ html {
       rgb(255, 0, 79, 0.5)
     ),
     linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0, 1)),
-    url("images/new-background.png");
+    url("images/background-image-new.png");
   background-size: cover;
   background-position: center;
 }
@@ -78,6 +78,37 @@ nav ul li a:hover::after {
 nav .fas {
   display: none;
 }
+.typing-text {
+  font-size: 1rem;
+  border-right: 2px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(20, end) 1s forwards infinite,
+    blink 0.75s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 13ch; /* Adjust the number based on the length of the text */
+  }
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
 /* End Header */
 /* Start About  */
 #about {

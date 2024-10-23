@@ -17,14 +17,18 @@
       integrity="sha512-..."
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+    />
   </head>
   <body>
     <!-- Start Header -->
     <div id="header">
       <div class="container">
         <nav>
-          <img src="images/new-logo.png" class="logo" />
-          <ul id="sidemenu">
+          <img src="images/new-logo.png" class="logo" data-aos="fade-down" />
+          <ul id="sidemenu" data-aos="fade-down">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
@@ -33,9 +37,10 @@
           </ul>
           <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
-        <div class="header-text">
+        <div class="header-text" data-aos="fade-right">
           <p>Software Developer</p>
-          <h1>Hi, I'm <span>Ashish</span><br />From Varanasi, India</h1>
+          <h1 class="typing-text">Hi, I'm <span>Ashish</span></h1>
+          <h1>From Varanasi, India</h1>
         </div>
       </div>
     </div>
@@ -44,16 +49,16 @@
     <div id="about">
       <div class="container">
         <div class="row">
-          <div class="about-col-1">
+          <div class="about-col-1" data-aos="fade-right">
             <img src="images/my-pic.png" />
           </div>
           <div class="about-col-2">
-            <h1 class="sub-title">About me</h1>
-            <p>
+            <h1 class="sub-title" data-aos="fade-left">About me</h1>
+            <p data-aos="fade-left">
               I've 2 years of experience in developing front-end web
               application, seeking full-time frontend engineering role.
             </p>
-            <div class="sub-titles">
+            <div class="sub-titles" data-aos="zoom-in">
               <p class="tab-links active-link" onclick="opentab('skills')">
                 Skills
               </p>
@@ -68,7 +73,7 @@
                 Certification
               </p>
             </div>
-            <div class="tab-contents active-tab" id="skills">
+            <div class="tab-contents active-tab" id="skills" data-aos="zoom-in">
               <ul>
                 <li>
                   <span>Primary</span><br />JavaScript, React, CSS, HTML, Web
@@ -81,7 +86,7 @@
                 </li>
               </ul>
             </div>
-            <div class="tab-contents" id="experience1">
+            <div class="tab-contents" id="experience1" data-aos="zoom-in">
               <ul>
                 <li>
                   <span>Plutonic Services</span><br />
@@ -201,9 +206,9 @@
     <!-- Start Portfolio -->
     <div id="portfolio">
       <div class="container">
-        <h1 class="sub-title">Professional Experience</h1>
+        <h1 class="sub-title" data-aos="fade-right">Professional Work</h1>
         <div class="work-list">
-          <div class="work">
+          <div class="work" data-aos="flip-left">
             <img src="images/work-1.png" />
             <div class="layer">
               <h3>Birbals</h3>
@@ -218,7 +223,7 @@
               >
             </div>
           </div>
-          <div class="work">
+          <div class="work" data-aos="flip-left">
             <img src="images/work-2.png" />
             <div class="layer">
               <h3>In will we trust</h3>
@@ -233,7 +238,7 @@
               >
             </div>
           </div>
-          <div class="work">
+          <div class="work" data-aos="flip-left">
             <img src="images/work-3.png" />
             <div class="layer">
               <h3>Dset public school</h3>
@@ -249,7 +254,7 @@
             </div>
           </div>
         </div>
-        <a class="btn">See more</a>
+        <a class="btn" data-aos="zoom-in">See more</a>
       </div>
     </div>
     <!-- End Portfolio -->
@@ -258,18 +263,18 @@
       <div class="container">
         <div class="row">
           <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p>
+            <h1 class="sub-title" data-aos="fade-right">Contact Me</h1>
+            <p data-aos="fade-right">
               <a href="mailto: ashishgupta8738@gmail.com"
                 ><i class="fas fa-envelope"></i> ashishgupta8738@gmail.com</a
               >
             </p>
-            <p>
+            <p data-aos="fade-right">
               <a href="tel: +918887515989"
                 ><i class="fas fa-phone"></i>+91 8887515989
               </a>
             </p>
-            <div class="social-icons">
+            <div class="social-icons" data-aos="fade-right">
               <!-- <a href="#"><i class="fab fa-facebook"></i> </a> -->
               <a href="https://github.com/iashish15" target="_blank"
                 ><i class="fab fa-github"></i>
@@ -283,30 +288,47 @@
                 ><i class="fab fa-linkedin"></i>
               </a>
             </div>
-            <a href="images/updated_resume.pdf" download class="btn btn2"
+            <a
+              href="images/updated_resume.pdf"
+              download
+              class="btn btn2"
+              data-aos="zoom-in"
               >Download CV</a
             >
           </div>
           <div class="contact-right">
             <form name="submit-form-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Name"
+                required
+                data-aos="fade-left"
+              />
               <input
                 type="email"
                 name="Email"
                 placeholder="Your Email"
                 required
+                data-aos="fade-left"
               />
               <textarea
                 name="Message"
                 rows="6"
                 placeholder="Your Message"
+                data-aos="fade-left"
               ></textarea>
               <img
                 id="spinners"
                 src="https://i.gifer.com/ZZ5H.gif"
                 alt="Loading.."
               />
-              <button type="submit" id="submitBtn" class="btn btn2">
+              <button
+                type="submit"
+                id="submitBtn"
+                class="btn btn2"
+                data-aos="zoom-in"
+              >
                 Submit
               </button>
             </form>
@@ -373,6 +395,14 @@
             form.reset();
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // animation duration in milliseconds
+        easing: "ease-in-out", // animation easing
+        once: false, // whether animation should happen only once - while scrolling down
       });
     </script>
   </body>
