@@ -1,5 +1,6 @@
 import { useEffect, useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
+import avatarImage from "./assets/avatar_image.png";
 import SectionHeading from "./components/SectionHeading";
 import SkillCard from "./components/SkillCard";
 import ProjectCard from "./components/ProjectCard";
@@ -103,7 +104,7 @@ function App() {
               className="mx-auto h-24 w-24 rounded-full border-2 border-sky-400/30 bg-gradient-to-br from-sky-500/20 to-violet-500/20 p-1 shadow-lg shadow-sky-500/20"
             >
               <img
-                src="/images/avatar_image.png"
+                src={avatarImage}
                 alt="Profile"
                 className="h-full w-full rounded-full object-cover"
               />
