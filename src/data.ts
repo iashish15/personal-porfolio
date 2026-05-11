@@ -1,3 +1,8 @@
+import work1Image from "./assets/work-1.png";
+import work2Image from "./assets/work-2.png";
+import work3Image from "./assets/work-3.png";
+import backgroundImageNew from "./assets/background-image-new.png";
+
 export const heroSocials = [
   {
     label: "LinkedIn",
@@ -61,7 +66,7 @@ export const projects = [
     title: "ScaleFlow Dashboard",
     category: "SaaS analytics dashboard",
     type: "Dashboard",
-    imageSrc: "/images/work-1.png",
+    imageSrc: work1Image,
     screenshotLabel: "Admin preview",
     description:
       "Built a polished analytics dashboard for B2B operations that surfaced live metrics, user insights, and conversion signals in a single pane.",
@@ -82,7 +87,7 @@ export const projects = [
     title: "NIX HRMS System",
     category: "Enterprise HR management",
     type: "HRMS",
-    imageSrc: "/images/work-2.png",
+    imageSrc: work2Image,
     screenshotLabel: "Workflow preview",
     description:
       "Delivered a modern HRMS interface for employee profiles, leave approvals, and payroll workflows with clean data-driven interactions.",
@@ -103,7 +108,7 @@ export const projects = [
     title: "CommercePulse Storefront",
     category: "Customer-facing e-commerce",
     type: "E-commerce",
-    imageSrc: "/images/work-3.png",
+    imageSrc: work3Image,
     screenshotLabel: "Shop preview",
     description:
       "Developed a responsive storefront with product discovery, checkout flow, and performance optimizations tailored for conversion and speed.",
@@ -124,7 +129,7 @@ export const projects = [
     title: "Nova Launch Suite",
     category: "Growth marketing website",
     type: "Marketing",
-    imageSrc: "/images/background-image-new.png",
+    imageSrc: backgroundImageNew,
     screenshotLabel: "Landing preview",
     description:
       "Created a premium launch site for a SaaS product with animation-led storytelling, responsive hero sections, and conversion-focused messaging.",
